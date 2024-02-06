@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: #ffffff;
+    background: #000000;
+  }
+}
+
+:root {
+  --main: theme("colors.gray.100");
+  --heading: theme("colors.neutral.600");
+  --p-heading: theme("colors.neutral.700");
+  --navbar: theme("colors.gray.300");
+  --brand: theme("colors.gray.800");
+  --t-navbar: theme("colors.neutral.700");
+  --footer: theme("colors.gray.800");
+  --t-footer: theme("colors.gray.300");
+  --f-brand: theme("colors.gray.300");
+  --button: theme("colors.gray.700");
+  --t-button: theme("colors.neutral.100");
+  --t-primary: theme("colors.neutral.500");
+  --t-secondary: theme("colors.neutral.200");
+  --placeholder: theme("colors.gray.200");
+}
+
+[data-theme="dark"] {
+  --main: theme("colors.gray.950");
+  --p-heading: theme("colors.neutral.300");
+  --button: theme("colors.yellow.700");
+  --t-primary: theme("colors.neutral.400");
+  --t-secondary: theme("colors.neutral.200");
+  --heading: theme("colors.yellow.400");
+  --navbar: theme("colors.transparent");
+  --brand: theme("colors.gray.100");
+  --f-brand: theme("colors.gray.300");
+  --t-navbar: theme("colors.neutral.200");
+  --footer: theme("colors.gray.800/90");
+  --t-footer: theme("colors.gray.400");
+  --t-button: theme("colors.neutral.200");
+  --placeholder: theme("colors.gray.700");
+}
+
+[data-theme="blue"] {
+  --main: #101024;
+  --p-heading: theme("colors.blue.300");
+  --button: theme("colors.blue.700");
+  --t-primary: theme("colors.neutral.300");
+  --t-secondary: theme("colors.neutral.200");
+  --heading: theme("colors.blue.400");
+  --navbar: theme("colors.transparent");
+  --brand: theme("colors.blue.200");
+  --f-brand: theme("colors.gray.400");
+  --t-navbar: theme("colors.neutral.200");
+  --footer: #02074d;
+  --t-footer: theme("colors.neutral.300");
+  --t-button: theme("colors.neutral.100");
+  --placeholder: theme("colors.blue.800");
+
+}
+
+[data-theme="pink"] {
+  --main: #1d0e13;
+  --p-heading: theme("colors.pink.300");
+  --button: theme("colors.pink.700");
+  --t-primary: theme("colors.neutral.300");
+  --t-secondary: theme("colors.neutral.200");
+  --heading: theme("colors.pink.400");
+  --navbar: theme("colors.transparent");
+  --brand: theme("colors.pink.200");
+  --f-brand: theme("colors.gray.400");
+  --t-navbar: theme("colors.neutral.200");
+  --footer: #4d0220;
+  --t-footer: theme("colors.neutral.300");
+  --t-button: theme("colors.neutral.100");
+  --placeholder: theme("colors.pink.800");
+}
+
+[data-theme="lime"] {
+  --main: #0e1d0f;
+  --p-heading: theme("colors.lime.300");
+  --button: theme("colors.lime.700");
+  --t-primary: theme("colors.neutral.200");
+  --t-secondary: theme("colors.neutral.200");
+  --heading: theme("colors.lime.400");
+  --navbar: theme("colors.transparent");
+  --brand: theme("colors.lime.200");
+  --f-brand: theme("colors.gray.300");
+  --t-navbar: theme("colors.neutral.200");
+  --footer: #024d21;
+  --t-footer: theme("colors.neutral.200");
+  --t-button: theme("colors.neutral.200");
+  --placeholder: theme("colors.lime.800");
+}
